@@ -6,14 +6,14 @@ void setup(){
 }
 
 void loop(){
-value = analogRead(A0);
-Serial.print("Value = ");
-Serial.println(value);
-if (value > 512 ){
-  digitalWrite(13, 1);
-}
-else {
-  digitalWrite(13, 0);
-}
-delay(50);
+  value = analogRead(A0);
+  Serial.print("Value = ");
+  Serial.println(value);
+  if (value > 512 ){
+    digitalWrite(13, 1);
+  }
+  else {
+    digitalWrite(13, 0);
+  }
+  delay(50);
 }
